@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 95px;
 }
 
 a:link {
@@ -64,10 +64,33 @@ a:active {
   height: 350px;
 }
 .banner-text {
-  position: absolute;
-  top: 40%;
-  left: 2%;
-  color: white;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin-left: 15px;
+    color: white;
+}
+/* Overview Section */
+.overview-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 80px;
+}
+.overview-section h1 {
+  color: rgb(57, 16, 75);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.overview-section p {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
@@ -112,21 +135,35 @@ a:active {
   .main-nav-component.active {
     display: flex;
   }
+  /* Banner Section */
+  .banner-text {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+  }
+  /* Overview Section */
+  .overview-section {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .image-part img {
+    width: 100%;
+  }
 }
 
-/* Banner Section */
-.banner-text {
-    position: absolute;
-    top: 30%;
-    left: 2%;
-    color: white;
-    
-  }
 @media screen and (min-width: 786px) and (max-width: 1024px) {
   /* Navbar section */
   .main-nav-component {
     justify-content: center;
     align-items: center;
     gap: 50px;
+  }
+  /* Overview Section */
+  .overview-section {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .image-part img {
+    width: 100%;
   }
 }
