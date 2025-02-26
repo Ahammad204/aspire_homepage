@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Aspire Home page</title>
+  </head>
+  <body>
+    <!-- Navbar section  -->
+    <nav>
+      <div class="upper-nav">
+        <div class="upper-nav-component">
+          <img src="assets/dashboard.png" alt="" />
+          <p>My Dashboard</p>
+        </div>
+        <div class="upper-nav-component">
+          <img src="assets/support.png" alt="" />
+          <p>Support Us</p>
+        </div>
+        <div class="upper-nav-component">
+          <img src="./assets/search.png" alt="" />
+          <p>Search</p>
+        </div>
+      </div>
+      <div class="main-nav">
+        <img src="./assets/logo.png" alt="" class="logo" />
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="main-nav-component">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Our Program</a>
+          <a href="">Collaborators</a>
+          <a href="">Blog</a>
+          <a href="">Stories</a>
+          <a href="">Contact</a>
+          <button>Apply Now</button>
+        </div>
+      </div>
+    </nav>
     
-</body>
+    <script>
+      function toggleMenu() {
+        document
+          .querySelector(".main-nav-component")
+          .classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
