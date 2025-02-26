@@ -1,3 +1,4 @@
+/* Navbar section */
 .upper-nav {
   display: flex;
   justify-content: end;
@@ -53,20 +54,36 @@ a:active {
   font-size: 30px;
   cursor: pointer;
 }
+
+/* Banner section */
+.banner-section {
+  background-image: url("assets/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
-    .upper-nav {
-        
-        justify-content: center;
-        gap: 20px;
-        margin: 0px 10px 0px 10px;
-      }
-      .main-nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0px 20px 0px 0px;
-      }
-    
+  /* Navbar section */
+  .upper-nav {
+    justify-content: center;
+    gap: 20px;
+    margin: 0px 10px 0px 10px;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px 0px 0px;
+  }
+
   .main-nav-component {
     display: none;
     flex-direction: column;
@@ -78,6 +95,7 @@ a:active {
     text-align: center;
     padding: 20px 0;
     gap: 10px;
+    z-index: 1;
   }
 
   .main-nav-component a,
@@ -95,12 +113,20 @@ a:active {
     display: flex;
   }
 }
-@media screen and (min-width: 786px) and (max-width: 1024px){
-    .main-nav-component {
-        
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-      }
-      
+
+/* Banner Section */
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: white;
+    
+  }
+@media screen and (min-width: 786px) and (max-width: 1024px) {
+  /* Navbar section */
+  .main-nav-component {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
 }
