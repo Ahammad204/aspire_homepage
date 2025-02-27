@@ -64,11 +64,11 @@ a:active {
   height: 350px;
 }
 .banner-text {
-    display: flex;
-    text-align: left;
-    justify-content: left;
-    margin-left: 15px;
-    color: white;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  margin-left: 15px;
+  color: white;
 }
 /* Overview Section */
 .overview-section {
@@ -92,7 +92,31 @@ a:active {
   letter-spacing: 0%;
   text-align: left;
 }
-
+/* Achievement Section */
+.achievement-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0px 0px 0px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 80px;
+  background-color: #39104b;
+  color: white;
+  border-radius: 30px 0px;
+}
+.card img {
+  width: 45px;
+  height: 45px;
+}
+.card-img {
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+}
 @media screen and (max-width: 768px) {
   /* Navbar section */
   .upper-nav {
@@ -149,6 +173,11 @@ a:active {
   .image-part img {
     width: 100%;
   }
+  /* Achievement Section */
+  .achievement-section {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 786px) and (max-width: 1024px) {
@@ -165,5 +194,11 @@ a:active {
   }
   .image-part img {
     width: 100%;
+  }
+  /* Achievement Section */
+  .achievement-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
   }
 }
